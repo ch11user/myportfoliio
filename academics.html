@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academics | T Charan</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @media (max-width: 640px) {
+      .lor-grid { grid-template-columns: 1fr !important; }
+    }
+
+    /* ── Single-box skill cards ── */
+    .skill-box {
+      border: 1px solid var(--border, rgba(26,35,64,0.12));
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 2px 16px rgba(26,35,64,0.06);
+    }
+
+    .skill-box-header {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      padding: .95rem 1.4rem;
+      background: var(--secondary, #1a2340);
+    }
+
+    .skill-box-header .sbh-icon { font-size: 1.25rem; }
+
+    .skill-box-header h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      margin: 0;
+      letter-spacing: .02em;
+    }
+
+    .skill-box-body {
+      padding: 1.4rem 1.75rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .3rem 2rem;
+      background: var(--card-bg, #faf7f2);
+    }
+
+    @media (max-width: 560px) {
+      .skill-box-body { grid-template-columns: 1fr; }
+    }
+
+    .sb-item {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .45rem 0;
+      border-bottom: 1px solid rgba(26,35,64,0.06);
+    }
+    .sb-item:last-child,
+    .sb-item:nth-last-child(2):nth-child(odd) { border-bottom: none; }
+
+    .sb-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--primary, #b8963e);
+      flex-shrink: 0;
+    }
+
+    .sb-item span {
+      font-size: .9rem;
+      font-weight: 500;
+      color: var(--text, #1a2340);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">T <span>Charan</span></div>
+    <ul class="nav-links">
+      
+      <li><a href="about.html">About</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="sports.html">Sports</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-wrapper">
+    <div class="container section">
+
+      
+
+      <h2 class="section-title">Academics</h2>
+      <p class="section-subtitle">A strong academic foundation underpinned by analytical strength and technical aptitude.</p>
+
+      <!-- ===== CLASS 10 BANNER ===== -->
+      <div class="academics-hero">
+        <div class="grade-circle">
+          <span class="pct">92.8%</span>
+          <span class="lbl">Class X</span>
+        </div>
+        <div>
+          <h3 style="font-size:1.15rem;margin-bottom:.3rem;color:var(--secondary);">
+            DAV Boys Senior Secondary School
+          </h3>
+          <p style="color:var(--text-muted);font-size:.9rem;">Gopalapuram, Chennai</p>
+          <p style="margin-top:.5rem;font-size:.88rem;">
+            Achieved a strong academic record at Class 10, demonstrating consistency,
+            analytical strength, and a deep passion for STEM subjects.
+          </p>
+          <span class="pill" style="margin-top:.75rem;display:inline-block;">Class X: 92.8%</span>
+        </div>
+      </div>
+
+      <!-- ===== CLASS 12 PREDICTED ===== -->
+      <h3 style="margin-bottom:1rem;color:var(--secondary);">Class XII — Predicted Marks</h3>
+      <div class="card" style="margin-bottom:2.5rem;">
+
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;">
+
+          <!-- Left: school info + total score box -->
+          <div>
+            <h4 style="margin-bottom:.25rem;">DAV Boys Senior Secondary School — Class XII</h4>
+            <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:1rem;">
+              Predicted Mark: 2025-2026 &nbsp;|&nbsp; Gopalapuram, Chennai, Tamilnadu, India
+            </p>
+
+            <!-- Total score box -->
+            <div style="display:inline-flex;align-items:center;gap:1rem;background:rgba(59,130,246,0.10);border:1px solid rgba(59,130,246,0.25);border-radius:12px;padding:.85rem 1.25rem;">
+              <div>
+                <p style="font-size:.75rem;color:var(--text-muted);margin-bottom:.2rem;">Predicted Score</p>
+                <p style="font-size:1.6rem;font-weight:700;color:var(--primary);line-height:1;">
+                  483
+                  <span style="font-size:.9rem;font-weight:500;color:var(--text-muted);"> / 500</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: PDF buttons -->
+          <div style="display:flex;flex-direction:column;gap:.75rem;align-items:flex-start;">
+            <p style="font-size:.8rem;color:var(--text-muted);font-weight:500;">📋 Predicted Mark Sheet</p>
+            <div style="display:flex;gap:.75rem;flex-wrap:wrap;">
+              <a href="ms12.pdf" target="_blank" class="btn btn-primary" style="font-size:.82rem;padding:.55rem 1.1rem;">
+                📄 View Predicted Mark Sheet
+              </a>
+              <a href="ms12.pdf" download="Class12_Marksheet_TCharan.pdf" class="btn btn-outline" style="font-size:.82rem;padding:.55rem 1.1rem;">
+                ⬇ Download
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===== LETTERS OF RECOMMENDATION ===== -->
+      <h3 style="margin-bottom:1rem;color:var(--secondary);">📄 Letters of Recommendation</h3>
+      <div class="lor-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2.5rem;">
+
+        <!-- LOR 1 -->
+        <div class="card" style="display:flex;flex-direction:column;gap:1rem;">
+          <div style="display:flex;align-items:center;gap:.85rem;">
+            <div style="width:46px;height:46px;border-radius:10px;background:rgba(59,130,246,0.12);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;border:1px solid rgba(59,130,246,0.22);">
+              👨‍🏫
+            </div>
+            <div>
+              <h4 style="font-size:.95rem;margin-bottom:.1rem;">Mrs. Catherine Jaiprakash</h4>
+              <p style="font-size:.78rem;color:var(--text-muted);">English Teacher — DAV Boys Sr Sec School</p>
+            </div>
+          </div>
+
+          <div style="border-top:1px solid var(--border);padding-top:1rem;display:flex;gap:.65rem;flex-wrap:wrap;">
+            <a href="lor1.pdf" target="_blank" class="btn btn-primary" style="font-size:.8rem;padding:.5rem 1rem;">
+              📄 View Letter
+            </a>
+            <a href="lor1.pdf" download="LOR1_TCharan.pdf" class="btn btn-outline" style="font-size:.8rem;padding:.5rem 1rem;">
+              ⬇ Download
+            </a>
+          </div>
+        </div>
+
+        <!-- LOR 2 -->
+        <div class="card" style="display:flex;flex-direction:column;gap:1rem;">
+          <div style="display:flex;align-items:center;gap:.85rem;">
+            <div style="width:46px;height:46px;border-radius:10px;background:rgba(59,130,246,0.12);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;border:1px solid rgba(59,130,246,0.22);">
+              👩‍💼
+            </div>
+            <div>
+              <h4 style="font-size:.95rem;margin-bottom:.1rem;">Ms. Hemalatha Loganathan</h4>
+              <p style="font-size:.78rem;color:var(--text-muted);">Computer Science Teacher — DAV Boys Sr Sec School</p>
+            </div>
+          </div>
+
+          <div style="border-top:1px solid var(--border);padding-top:1rem;display:flex;gap:.65rem;flex-wrap:wrap;">
+            <a href="lor2.pdf" target="_blank" class="btn btn-primary" style="font-size:.8rem;padding:.5rem 1rem;">
+              📄 View Letter
+            </a>
+            <a href="lor2.pdf" download="LOR2_TCharan.pdf" class="btn btn-outline" style="font-size:.8rem;padding:.5rem 1rem;">
+              ⬇ Download
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===== SUBJECT STRENGTHS ===== -->
+      <h3 style="margin-bottom:1rem;color:var(--secondary);">Subject Strengths</h3>
+      <div class="subjects-grid" style="margin-bottom:2.5rem;">
+        <div class="subject-card">
+          <h4>⚛ Physics</h4>
+          <p>Strong conceptual grasp of mechanics, optics, electromagnetism, and modern physics.</p>
+        </div>
+        <div class="subject-card">
+          <h4>💻 Computer Science</h4>
+          <p>Proficient in Python, database systems, and software development workflows.</p>
+        </div>
+        <div class="subject-card">
+          <h4>🔢 Mathematics</h4>
+          <p>Consistent high scorer with strong foundations in algebra, calculus, and statistics.</p>
+        </div>
+        <div class="subject-card">
+          <h4>🧠 Analytical Reasoning</h4>
+          <p>Actively challenges myself with aptitude and logical reasoning beyond the curriculum.</p>
+        </div>
+        <div class="subject-card">
+          <h4>🌐 English</h4>
+          <p>Strong command of written and spoken English for effective technical communication.</p>
+        </div>
+        <div class="subject-card">
+          <h4>🔬 Chemistry</h4>
+          <p>Solid understanding of chemical principles complementing an interdisciplinary approach.</p>
+        </div>
+      </div>
+
+      <!-- ===== TECHNICAL SKILLS – single box ===== -->
+      <h3 style="margin-bottom:1rem;color:var(--secondary);">Technical Skills</h3>
+      <div class="skill-box">
+        <div class="skill-box-header">
+          <span class="sbh-icon">💻</span>
+          <h3>Technical Skills</h3>
+        </div>
+        <div class="skill-box-body">
+          <div class="sb-item"><div class="sb-dot"></div><span>Python</span></div>
+          <div class="sb-item"><div class="sb-dot"></div><span>Visual Studio Code</span></div>
+          <div class="sb-item"><div class="sb-dot"></div><span>MySQL</span></div>
+          <div class="sb-item"><div class="sb-dot"></div><span>Web Basics (HTML, CSS)</span></div>
+          <div class="sb-item"><div class="sb-dot"></div><span>Database Design</span></div>
+          <div class="sb-item"><div class="sb-dot"></div><span>Analytical Thinking</span></div>
+          <div class="sb-item"><div class="sb-dot"></div><span>UI Design (CustomTkinter)</span></div>
+          <div class="sb-item"><div class="sb-dot"></div><span>Problem Solving</span></div>
+        </div>
+      </div>
+
+      <!-- ===== SOFT SKILLS – single box ===== -->
+      <h3 style="margin-bottom:1rem;color:var(--secondary);">Soft Skills</h3>
+      <div class="skill-box">
+        <div class="skill-box-header">
+          <span class="sbh-icon">🤝</span>
+          <h3>Soft Skills</h3>
+        </div>
+        <div class="skill-box-body">
+          <div class="sb-item"><div class="sb-dot"></div><span>Communication</span></div>
+          <div class="sb-item"><div class="sb-dot"></div><span>Teamwork</span></div>
+          <div class="sb-item"><div class="sb-dot"></div><span>Leadership</span></div>
+          <div class="sb-item"><div class="sb-dot"></div><span>Time Management</span></div>
+          <div class="sb-item"><div class="sb-dot"></div><span>Event Management</span></div>
+          <div class="sb-item"><div class="sb-dot"></div><span>Resilience</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <strong>T Charan</strong> &nbsp;|&nbsp;
+    <a href="mailto:12347charan@gmail.com">12347charan@gmail.com</a> &nbsp;|&nbsp;
+    <a href="https://github.com/CH11User" target="_blank">GitHub: CH11User</a>
+    <br /><br />
+    © 2024 T Charan. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

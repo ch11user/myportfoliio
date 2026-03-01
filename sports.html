@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       sports.html — Sports Page
+       T Charan Portfolio | SUTD Application
+  ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports | T Charan</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Stats banner */
+    .stats-banner {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .stat-box {
+      background:#e7b922;
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 1.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(15, 83, 231, 0.3);
+    }
+    .stat-box .stat-num {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: oklab(96.92% -0.00129 -0.00328);
+}
+    .stat-box .stat-label {
+      font-size: .75rem;
+      opacity: .85;
+      margin-top: .35rem;
+    }
+    .trait-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+    .trait-card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      border: 1px solid var(--border);
+      text-align: center;
+      font-size: .88rem;
+      font-weight: 500;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    .trait-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .trait-card .t-icon { font-size: 1.8rem; margin-bottom: .4rem; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <div class="nav-logo">T <span>Charan</span></div>
+    <ul class="nav-links">
+      
+      <li><a href="about.html">About</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="sports.html">Sports</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== PAGE CONTENT ===== -->
+  <div class="page-wrapper">
+    <div class="container section">
+
+      
+
+      <!-- Page Title -->
+      <h2 class="section-title">Sports &amp; Athletics</h2>
+      <p class="section-subtitle">A decorated Karate practitioner with state and regional honours, driven by discipline and resilience.</p>
+
+      <!-- Stats Banner -->
+      <div class="stats-banner">
+        <div class="stat-box">
+          <div class="stat-num">3×</div>
+          <div class="stat-label">State Silver Medals</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">2×</div>
+          <div class="stat-label">South Indian Bronze Medals</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">2×</div>
+          <div class="stat-label">Home South Represented</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">10+</div>
+          <div class="stat-label">Years of Karate Practice</div>
+        </div>
+      </div>
+
+      <!-- Medal Showcase -->
+      <h3 style="margin-bottom:1rem;color:var(--secondary);">🏅 Medal Showcase (Represented the State)</h3>
+      <div class="medals-grid" style="margin-bottom:2.5rem;">
+        <div class="medal-card">
+          <div class="medal-icon">🥈</div>
+          <h4>State Silver Medal</h4>
+          <p>1st State-Level Championship — Karate (Kumite)</p>
+        </div>
+        <div class="medal-card">
+          <div class="medal-icon">🥉</div>
+          <h4>State Bronze Medal</h4>
+          <p>2nd State-Level Championship — Karate</p>
+        </div>
+        <div class="medal-card">
+          <div class="medal-icon">🥈</div>
+          <h4>State Silver Medal</h4>
+          <p>3rd State-Level Championship — Karate</p>
+        </div>
+        <div class="medal-card">
+          <div class="medal-icon">🥉</div>
+          <h4>South Indian Bronze Medal</h4>
+          <p>1st South Indian Tournament Representation</p>
+        </div>
+        <div class="medal-card">
+          <div class="medal-icon">🥉</div>
+          <h4>South Indian Bronze Medal</h4>
+          <p>2nd South Indian Tournament Representation</p>
+        </div>
+        <div class="medal-card">
+          <div class="medal-icon">🏅</div>
+          <h4>Multiple Regional Honours</h4>
+          <p>District &amp; institutional Karate accolades across career</p>
+        </div>
+      </div>
+      <!-- ===== CERTIFICATE ===== -->
+<h3 style="margin-bottom:1rem;color:var(--secondary);">📄 Certificate</h3>
+<div class="card" style="display:flex;flex-direction:column;gap:1rem;margin-bottom:2.5rem;">
+  <div style="display:flex;align-items:center;gap:.85rem;">
+    <div style="width:46px;height:46px;border-radius:10px;background:var(--accent-muted);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;border:1px solid var(--border-gold);">🥋</div>
+    <div>
+      <h4 style="font-size:.95rem;margin-bottom:.1rem;">Karate Achievement Certificate</h4>
+      <p style="font-size:.78rem;color:var(--text-muted);">State & South Indian Level — Karate Championships</p>
+    </div>
+  </div>
+  <div style="padding-top:.5rem;display:flex;gap:.65rem;flex-wrap:wrap;">
+    <a href="certificate.pdf" target="_blank" class="btn btn-primary" style="font-size:.8rem;padding:.5rem 1rem;">📄 View Certificate</a>
+    <a href="certificate.pdf" download="Certificate_TCharan.pdf" class="btn btn-outline" style="font-size:.8rem;padding:.5rem 1rem;">⬇ Download</a>
+  </div>
+  <p style="font-size:.7rem;color:var(--text-muted);">📁 Add file named <code style="background:rgba(201,168,76,0.10);padding:.1rem .35rem;border-radius:4px;">certificate.pdf</code> to your project folder</p>
+</div>
+
+      <!-- Journey Timeline -->
+      <h3 style="margin-bottom:1.25rem;color:var(--secondary);">🥋 Karate Journey</h3>
+      <div class="timeline" style="margin-bottom:2.5rem;">
+        <div class="timeline-item">
+          <h4>Early Childhood — First Steps on the Mat</h4>
+          <p>Began formal Karate training at a young age, quickly developing a passion for the discipline, technical precision, and competitive spirit of the sport.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>District-Level Competitions</h4>
+          <p>Competed in district-level tournaments, consistently placing in top positions and earning recognition for technical form and competitive aggression.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>State-Level Debut — Silver Medal</h4>
+          <p>Earned first State Silver Medal, representing the school and club at the Tamil Nadu State Karate Championship.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>South Indian Tournament — Regional Representation</h4>
+          <p>Selected to represent the state at a South Indian-level tournament, competing against elite athletes across multiple states and winning the Bronze Medal.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Consecutive State Silver Medals (×3)</h4>
+          <p>Achieved three consecutive State Medals, demonstrating sustained excellence and continued growth as a competitive martial artist.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Second South Indian Bronze &amp; Ongoing Career</h4>
+          <p>Secured a second South Indian Bronze Medal, cementing status as a regional-level competitor. Continues to train actively and plans to represent the university in university-level competitions.</p>
+        </div>
+      </div>
+
+      <!-- Traits Developed -->
+
+      <!-- Other Sports -->
+      <div class="card" style="margin-bottom:2.5rem;">
+        <h4 style="font-size:2rem;font-weight:700;color:var(--secondary);margin-bottom:1rem;"> OTHER SPORTS</h4>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.6rem;">
+          <li style="display:flex;align-items:center;gap:.75rem;font-size:.9rem;color:var(--text);">
+            <span style="font-size:1.2rem;">🏐</span> Volleyball
+          </li>
+          <li style="display:flex;align-items:center;gap:.75rem;font-size:.9rem;color:var(--text);">
+            <span style="font-size:1.2rem;">🏏</span> Cricket
+          </li>
+          <li style="display:flex;align-items:center;gap:.75rem;font-size:.9rem;color:var(--text);">
+            <span style="font-size:1.2rem;">♟</span> Chess
+          </li>
+          <li style="display:flex;align-items:center;gap:.75rem;font-size:.9rem;color:var(--text);">
+            <span style="font-size:1.2rem;">🏃</span> Athletics
+          </li>
+        </ul>
+      </div>
+      <h3 style="margin-bottom:1rem;color:var(--secondary);">💪 Traits Developed Through Sport</h3>
+      <div class="trait-grid" style="margin-bottom:2rem;">
+        <div class="trait-card"><div class="t-icon">🎯</div>Discipline</div>
+        <div class="trait-card"><div class="t-icon">💪</div>Physical Resilience</div>
+        <div class="trait-card"><div class="t-icon">🧘</div>Mental Toughness</div>
+        <div class="trait-card"><div class="t-icon">🏆</div>Competitive Drive</div>
+        <div class="trait-card"><div class="t-icon">⏱</div>Time Management</div>
+        <div class="trait-card"><div class="t-icon">🤝</div>Sportsmanship</div>
+      </div>
+
+      <!-- SUTD Pledge -->
+      <div class="card" style="background:linear-gradient(135deg,#eff6ff,#e0e7ff);text-align:center;">
+        <p style="font-size:1.3rem;margin-bottom:.5rem;">🎓</p>
+        <h4 style="margin-bottom:.5rem;color:var(--secondary);">Representation in Future</h4>
+        <p style="color:var(--text-muted);font-size:.9rem;">
+          I am committed to continuing my Karate practice at the university level and am eager to 
+          represent the university in inter-university and national-level competitions, bringing both discipline 
+          and competitive experience to the university's sporting community.
+        </p>
+      </div>
+    
+
+
+
+    </div><!-- end container -->
+  </div><!-- end page-wrapper -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <strong>T Charan</strong> &nbsp;|&nbsp;
+    <a href="mailto:12347charan@gmail.com">12347charan@gmail.com</a> &nbsp;|&nbsp;
+    <a href="https://github.com/CH11User" target="_blank">GitHub: CH11User</a>
+    <br /><br />
+    © 2026 T Charan. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
